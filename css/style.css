@@ -1,0 +1,36 @@
+:root {
+    /* Midnight Library */
+    --Deep_Blue: #1c1c2d;
+    --Lumpy_Space: #4b3d6f;
+    --Bubblegum: #a67c9d;
+    --Peach: #d9c6b2;
+    --Soft_Rose:#f2e1d4;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/* nav */
+.navigation{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 5vh;
+    background-color: palevioletred;
+}
+.logo{
+    /* height: auto; */
+    width: auto;
+    background-color: red;
+}
+#navbarNavDropdown{
+    padding-right: 5vw;
+}
+#home,#About,#Contact{
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
