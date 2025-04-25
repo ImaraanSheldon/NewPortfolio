@@ -7,30 +7,27 @@
     --Soft_Rose:#f2e1d4;
   }
 
+
 *{
     margin: 0;
     padding: 0;
-    max-width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+.Intro{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family:fantasy;
 }
 
-/* nav */
-.navigation{
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 5vh;
-    background-color: palevioletred;
-}
-.logo{
-    /* height: auto; */
-    width: auto;
+.Mid{
+    width: 100vw;
+    height: 100vh;
     background-color: red;
-}
-#navbarNavDropdown{
-    padding-right: 5vw;
-}
-#home,#About,#Contact{
-    min-height: 100vh;
-    max-width: 100vw;
-    overflow: hidden;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
