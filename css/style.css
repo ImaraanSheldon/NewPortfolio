@@ -21,7 +21,13 @@
     height: 100vh;
     background-color: black;
     color: white;
-    font-family:fantasy;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+Intro-nav{
+    height: 10vh;
+}
+.Intro-text{
+    height:90vh;
 }
 
 .Mid{
