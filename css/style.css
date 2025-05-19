@@ -7,11 +7,28 @@
     --Soft_Rose:#f2e1d4;
   }
 
+.sansation-bold {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  /* font-style: italic; */
+}
+.sansation {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  /* font-style: italic; */
+}
+.sansita-swashed {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 *{
     margin: 0;
     padding: 0;
-    cursor: none;
+    /* cursor: none; */
     overflow-x: hidden;
     ::-webkit-scrollbar {
         display: none;
@@ -42,7 +59,7 @@
 .Intro{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--Lumpy_Space);
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -59,4 +76,22 @@ Intro-nav{
     background-color: red;
     color: black;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home-btn-container{
+    min-height: 100px;
+    max-height: 200px;
+}
+.button{
+    color: var(--Deep_Blue);
+    background-color: var(--Bubblegum);
+    height: 40px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0rem 1rem;
+    font-family: "Sansation";
+    border: var(--Deep_Blue), 1px, solid;
+}
+.button:hover{
+    transition: ease-in 0.25s;
+    background-color:rgb(166, 124, 157, 0.5);
 }
