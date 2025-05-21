@@ -4,46 +4,76 @@
     --Lumpy_Space: #4b3d6f;
     --Bubblegum: #a67c9d;
     --Peach: #d9c6b2;
-    --Soft_Rose:#f2e1d4;
-  }
+    --Soft_Rose: #f2e1d4;
+}
 
 .sansation-bold {
-  font-family: "Sansation", sans-serif;
-  font-weight: 700;
-  /* font-style: italic; */
+    font-family: "Sansation", sans-serif;
+    font-weight: bolder;
+    /* font-style: italic; */
 }
+
 .sansation {
-  font-family: "Sansation", sans-serif;
-  font-weight: 400;
-  /* font-style: italic; */
+    font-family: "Sansation", sans-serif;
+    font-weight: 400;
+    /* font-style: italic; */
 }
+
 .sansita-swashed {
-  font-family: "Sansita Swashed", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
+.tourney-thin {
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: thin;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
 
-*{
+.tourney-black {
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+* {
     margin: 0;
     padding: 0;
     /* cursor: none; */
     overflow-x: hidden;
+
     ::-webkit-scrollbar {
         display: none;
     }
 }
-#cursor{
+
+.through {
+    height: 10px;
+    width: 40vw;
+    background-color: var(--Peach);
+}
+
+.about-box {
+    width: 40vw;
+}
+
+#cursor {
     position: absolute;
     background-color: white;
-    height:10px;
-    width :10px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-#cursor-border{
+
+#cursor-border {
     position: absolute;
     background-color: transparent;
     height: 25px;
@@ -54,34 +84,44 @@
     pointer-events: none;
     transition: all 0.2s ease-out;
     filter: blur(1px);
-
 }
-.Intro{
+
+.Intro {
     width: 100vw;
     height: 100vh;
-    background-color: var(--Lumpy_Space);
+    /* background-color: var(--Lumpy_Space); */
+    background-image: url("../images/1-04a53022.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-Intro-nav{
-    height: 10vh;
-}
-.Intro-text{
-    height:90vh;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.Mid{
+Intro-nav {
+    height: 10vh;
+}
+
+.Intro-text {
+    height: 90vh;
+}
+
+.Mid {
     width: 100vw;
     height: 100vh;
     background-color: red;
     color: black;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.home-btn-container{
+
+.home-btn-container {
     min-height: 100px;
     max-height: 200px;
 }
-.button{
+
+.button {
     color: var(--Deep_Blue);
     background-color: var(--Bubblegum);
     height: 40px;
@@ -90,8 +130,293 @@ Intro-nav{
     margin: 0rem 1rem;
     font-family: "Sansation";
     border: var(--Deep_Blue), 1px, solid;
+    transition: ease-out 0.25s;
+    z-index: 1000;
 }
-.button:hover{
+
+.button:hover {
     transition: ease-in 0.25s;
-    background-color:rgb(166, 124, 157, 0.5);
+    background-color: rgb(166, 124, 157, 0.5);
 }
+
+/* Name animation */
+
+.name {
+    /* color: var(--Lumpy_Space); */
+    transition: 1s ease-in-out;
+    animation: name-anim 3s infinite linear;
+    z-index: 1000;
+}
+
+@keyframes name-anim {
+    0% {
+        opacity: 1;
+    }
+
+    12.5% {
+        opacity: 0.75;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+
+    37.5% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    62.5% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+
+    87.5% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Name animatio n*/
+
+/* Geometry Animation */
+.geometric-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.6;
+    transform-origin: center;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background: var(--Bubblegum);
+    animation: rotate 20s infinite linear;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--Deep_Blue);
+    animation: pulse 15s infinite alternate;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid var(--Lumpy_Space);
+    animation: float 12s infinite ease-in-out;
+}
+
+.rectangle {
+    width: 80px;
+    height: 30px;
+    background: var(--Peach);
+    animation: slide 18s infinite linear;
+}
+
+/* Medium Devices (≥ 992px) */
+@media (max-width: 991.98px) {
+
+    /* Styles for screens smaller than 992px (e.g., tablets) */
+    .square {
+        width: 30px;
+        height: 30px;
+        background: var(--Soft_Rose);
+        animation: rotate 20s infinite linear;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--Bubblegum);
+        animation: pulse 15s infinite alternate;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid var(--Deep_Blue);
+        animation: float 12s infinite ease-in-out;
+    }
+
+    .rectangle {
+        width: 60px;
+        height: 30px;
+        background: var(--Lumpy_Space);
+        animation: slide 18s infinite linear;
+    }
+
+}
+
+/* Small Devices (≥ 768px) */
+@media (max-width: 767.98px) {
+
+    /* Styles for screens smaller than 768px (e.g., landscape phones) */
+    .square {
+        width: 20px;
+        height: 20px;
+        background: var(--Peach);
+        animation: rotate 20s infinite linear;
+    }
+
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--Soft_Rose);
+        animation: pulse 15s infinite alternate;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-bottom: 25px solid var(--Bubblegum);
+        animation: float 12s infinite ease-in-out;
+    }
+
+    .rectangle {
+        width: 40px;
+        height: 20px;
+        background: var(--Deep_Blue);
+        animation: slide 18s infinite linear;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(20px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px) rotate(360deg);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(100px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateX(-100px) rotate(360deg);
+    }
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.5;
+    animation: sparkle 8s infinite linear;
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, #1a1a2e 80%);
+    z-index: 0;
+    animation: pulse-overlay 10s infinite alternate;
+}
+
+@keyframes pulse-overlay {
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Geometry Animation */
