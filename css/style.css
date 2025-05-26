@@ -53,6 +53,12 @@
     }
 }
 
+h1,
+p,
+div {
+    z-index: 1000;
+}
+
 .through {
     height: 10px;
     width: 40vw;
@@ -137,6 +143,11 @@ Intro-nav {
 .button:hover {
     transition: ease-in 0.25s;
     background-color: rgb(166, 124, 157, 0.5);
+}
+
+.box-1 {
+    height: 100vh;
+    z-index: 1000;
 }
 
 /* Name animation */
@@ -421,43 +432,46 @@ Intro-nav {
 
 /* Geometry Animation */
 
-a {
+.link {
+    position: relative;
+    color: var(--Soft_Rose);
     text-decoration: none;
-    color: var(--Color-Text-Fondant);
-    transition: all 0.4s ease;
-    font-family: var(--Font-Main-Hammersmith);
 }
 
-a:hover {
-    color: var(--Color-Background2-Juniper);
+.link:hover {
+    color: var(--Soft_Rose);
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Soft_Rose);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.link:hover::before {
+    transform: scaleX(1);
 }
 
 img {
     width: 100%;
+    z-index: 1000;
 }
 
-.link-custom {
-    font-weight: 700;
-    position: relative;
-
-    &:hover {
-        color: var(--Color-Header-Blossom);
-    }
-
+img[alt='about-self'] {
+    width: 500px;
+    height: 600px;
+    border-radius: 0 0 0 10%;
 }
 
-.link-custom::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: var(--Color-Header-Blossom);
-    position: absolute;
-    left: 0;
-    top: 110%;
-    transition: all 0.5s ease;
-}
 
-.link-custom:hover::after {
-    width: 100%;
-    transition: all 0.5 ease-in;
+
+.rose-gold {
+    color: #B76E79;
 }
