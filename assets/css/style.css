@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --Background-Color: #1c1c2d;
+    --Box-Color: #4b3d6f;
+    --Box-Hover: #a67c9d;
+    --Text-Hover: #d9c6b2;
+    --Text-Color: #f2e1d4;
+    --Font-base: "Bai Jamjuree";
+    --sidebar-width: 240px;
+}
+
+body {
+    background-color: var(--Background-Color);
+    color: var(--Text-Color);
+    font-family: var(--Font-base), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--Text-Hover);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Text-Color);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--Text-Hover);
+
+}
+
+img {
+    width: 100%;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(rgba(28, 28, 45, 0.9), rgba(28, 28, 45, 0.9)), url(../Images/sidebarbg.jpg);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--Text-Hover);
+}
+
+@media(min-width:992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(28, 28, 45, 0.9), rgba(28, 28, 45, 0.9)), url(../Images/sidebarbg.jpg);
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 5px solid var(--Box-Color);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
+
+    /* CONTENT WRAPPER */
+}
+
+/* NAVBAR */
