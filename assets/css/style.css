@@ -45,6 +45,10 @@ img {
     color: var(--Box-Hover);
 }
 
+.bg-base {
+    background-color: var(--Box-Color);
+}
+
 .full-height {
     min-height: 100vh;
     height: 100%;
@@ -54,6 +58,25 @@ img {
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.5s ease;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--Box-Hover);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--Background-Color);
+    color: var(--Box-Color);
 }
 
 /* NAVBAR */
