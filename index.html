@@ -14,7 +14,7 @@
     <title>Imaraan Sheldon Full-Stack Developer</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#Education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
+                        <a class="nav-link" href="#Projects">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Contact">Contact Us</a>
@@ -60,17 +60,21 @@
         <section id="Home" class="full-height px-lg-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <h1 class="display-4 fw-bold">Hi I'm Imaraan Sheldon. A <span class="text-brand">Versatile
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">Hi I'm Imaraan Sheldon. A <span
+                                class="text-brand">Versatile
                                 Full-stack Developer</span> and
                             <span class="text-brand">Editor</span>
                         </h1>
-                        <p class="lead mt-2 mb-4"> with experience in HTML, CSS, JavaScript,
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300"> with experience in HTML, CSS,
+                            JavaScript,
                             Vue.js, Node.js, and Flutter. Skilled in GitHub, DaVinci Resolve, and Photoshop,
                             blending technical and creative strengths to deliver polished digital work.
                         </p>
-                        <a href="#" class="btn btn-brand me-3">Intrested In My Projects?</a>
-                        <a href="#" class="link-custom">Call: (081) 319 8477</a>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href=" #Projects" class="btn btn-brand me-3">Intrested In My Projects?</a>
+                            <a href="#" class="link-custom">Call: (081) 319 8477</a>
+                        </div>
                     </div>
                     <!-- <div class="col-lg-4"></div> -->
                 </div>
@@ -84,23 +88,24 @@
 
                 <div class="row pb-4">
                     <div class="col-lg-8">
-                        <h6 class="text-brand">ABOUT</h6>
-                        <h1>ABOUT ME</h1>
-                        <p class="lead">I'm Imraan Sheldon, a full-stack developer from Cape Town with a passion for
+                        <h6 class="text-brand" data-aos="fade-up" data-aos-delay="0">ABOUT</h6>
+                        <h1 data-aos="fade-up" data-aos-delay="300">ABOUT ME</h1>
+                        <p class="lead" data-aos="fade-up" data-aos-delay="400">I'm Imraan Sheldon, a full-stack
+                            developer from Cape Town with a passion for
                             building web and mobile apps. I work across front-end and back-end technologies, and I also
                             enjoy drawing, video editing in DaVinci Resolve, and creating apps with Flutter. Always
                             exploring new tools, I love turning ideas into creative, functional solutions.</p>
                     </div>
                 </div>
 
-                <div class="row pb-4">
+                <div class="row pb-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="col-lg-8">
                         <h6 class="text-brand">SKILLS</h6>
                         <h1>HARD SKILLS</h1>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-delay="600">
                     <!-- html -->
                     <div class="col-md-3 pb-md-5 pb-2">
                         <div
@@ -209,11 +214,11 @@
 
                 <div class="row pb-4">
                     <div class="col-lg-8">
-                        <h1>SOFT SKILLS</h1>
+                        <h1 data-aos="fade-up" data-aos-delay="300">SOFT SKILLS</h1>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-delay="400">
                     <!-- Problem Solving -->
                     <div class="col-md-4 pb-md-5 pb-2">
                         <div
@@ -319,11 +324,129 @@
         <!-- PROJECTS -->
         <section id="Projects" class="full-height px-lg-5">
             <div class="container">
+
                 <div class="row pb-4">
                     <div class="col-lg-8">
-                        <h6 class="text-brand">PROJECTS</h6>
-                        <h1>MY PROJECTS</h1>
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>MY RECENT WORK</h1>
                     </div>
+                </div>
+
+                <div class="row gy-4">
+                    <!-- Demure -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/Images/Demure.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4 class="text-center">"DEMURE"</h4>
+                                <p class="lead text-center">DEMURE is a sleek e-commerce site built with Vue.js and
+                                    Node.js, offering timeless, stylish home furnishings with exceptional design and a
+                                    seamless shopping experience for the best modern living.</p>
+                                <div class="d-flex justify-content-evenly">
+                                    <a href="https://demure-9eaaa.firebaseapp.com/" target="_blank"
+                                        class="link-custom">View Website</a>
+                                    <a href="#" class="link-custom">View Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pokedex -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/Images/Pokedex.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4 class="text-center">"POKEDEX"</h4>
+                                <p class="lead text-center">Interactive Pokédex app built with Python. Explore
+                                    Pokémon stats, abilities, and types through a clean, responsive interface designed
+                                    for smooth navigation and an engaging user experience.</p>
+                                <div class="d-flex justify-content-evenly">
+                                    <a href="https://pokemon-beta-livid.vercel.app/" target="_blank"
+                                        class="link-custom">View Website</a>
+                                    <a href="#" class="link-custom">View Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Parsley & Sage: Color my World -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/Images/ColourMyWorld_Parsley&Sage_2.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4 class="text-center">"PARSLEY & SAGE: CMW"</h4>
+                                <p class="lead text-center">Parsley & Sage is a vibrant online gallery built with HTML,
+                                    CSS, and Vue.js, showcasing unique, handcrafted artworks and offering a smooth,
+                                    engaging experience for art lovers and collectors..</p>
+                                <div class="d-flex justify-content-evenly">
+                                    <a href="https://parsley-and-sage.vercel.app/index.html" target="_blank"
+                                        class="link-custom">View Website</a>
+                                    <a href="#" class="link-custom">View Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Demo -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/Images/OldPort.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4 class="text-center">"PREVIOUS PORTFOLIO"</h4>
+                                <p class="lead text-center">A curated collection of past projects showcasing diverse
+                                    skills and
+                                    creativity. Built with modern web technologies, highlighting design, development,
+                                    and problem-solving expertise across industries.</p>
+                                <div class="d-flex justify-content-evenly">
+                                    <a href="https://vue-portfolio-3ccf1.firebaseapp.com/" target="_blank"
+                                        class="link-custom">View Website</a>
+                                    <a href="#" class="link-custom">View Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Visio -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/Images/Visio.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4 class="text-center">"VISIO"</h4>
+                                <p class="lead">DEMURE is a sleek e-commerce site built with Vue.js and Node.js,
+                                    offering timeless, stylish home furnishings with exceptional design.</p>
+                                <div class="d-flex justify-content-evenly">
+                                    <a href="https://visio-alpha.vercel.app/" target="_blank" class="link-custom">View
+                                        Website</a>
+                                    <a href="#" class="link-custom">View Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- eshop -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/Images/Eshop.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4 class="text-center">"Eshop"</h4>
+                                <p class="lead">DEMURE is a sleek e-commerce site built with Vue.js and Node.js,
+                                    offering timeless, stylish home furnishings with exceptional design.</p>
+                                <div class="d-flex justify-content-evenly">
+                                    <a href="https://demure-9eaaa.firebaseapp.com/" target="_blank"
+                                        class="link-custom">View Website</a>
+                                    <a href="#" class="link-custom">View Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

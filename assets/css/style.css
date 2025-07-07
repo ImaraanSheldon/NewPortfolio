@@ -94,6 +94,10 @@ img {
     color: var(--Text-Hover);
 }
 
+.navbar .nav-link.active {
+    color: var(--Text-Hover);
+}
+
 @media(min-width:992px) {
     .navbar {
         min-height: 100vh;
@@ -146,7 +150,7 @@ img {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--Box-Color);
+    background-color: var(--Box-Hover);
     position: absolute;
     left: 0;
     top: 110%;
@@ -158,3 +162,18 @@ img {
 }
 
 /* BTN */
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CARD */
