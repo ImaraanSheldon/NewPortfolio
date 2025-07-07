@@ -177,3 +177,46 @@ img {
 }
 
 /* CARD */
+
+/* CONTACT */
+
+#Contact .form-control {
+    background-color: var(--Background-Color);
+    border-color: var(--Box-Color);
+    color: var(--Text-Color);
+}
+
+#Contact .form-control:focus {
+
+    border-color: var(--Box-Hover);
+    box-shadow: none;
+
+}
+
+#Contact .form-control::placeholder {
+    color: var(--Text-Color);
+}
+
+#Contact input.form-control {
+    height: 44px;
+}
+
+
+/* CONTACT */
+
+/* SOCIAL_ICONS */
+.social-icons {}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Box-Color);
+    color: var(--Background-Color);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+/* SOCIAL_ICONS */
